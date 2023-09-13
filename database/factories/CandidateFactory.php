@@ -17,7 +17,9 @@ class CandidateFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'Name' => $this->faker->name,
+            'Email' => $this->faker->email,
+            'GitHub' => $this->faker->username,
         ];
     }
 }

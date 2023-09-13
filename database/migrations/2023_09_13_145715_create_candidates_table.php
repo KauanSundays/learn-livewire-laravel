@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('candidates', function (Blueprint $table) {
             $table->id();
+            $table->string('Name');
+            $table->string('Email');
+            $table->string('GitHub')->nullable();
             $table->timestamps();
         });
     }
