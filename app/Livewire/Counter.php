@@ -1,26 +1,25 @@
 <?php
-
+ 
 namespace App\Livewire;
-
-use Illuminate\Contracts\View\View;
+ 
 use Livewire\Component;
-
+ 
 class Counter extends Component
 {
-    public int $count = 0;
+    public $count = 1;
  
-    public function increment() : void
+    public function increment()
     {
         $this->count++;
     }
-
-    public function decrement() : void
+ 
+    public function decrement()
     {
         $this->count--;
     }
  
-    public function render() : View
-    { 
+    public function render()
+    {
         return view('livewire.counter');
     }
 }
