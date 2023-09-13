@@ -3,9 +3,11 @@
 
         <div>
 
+            {{ $winner }}
+
         </div>
-        
-        <button>
+
+        <button wire:click="run">
             Sortear
         </button>
     </div>

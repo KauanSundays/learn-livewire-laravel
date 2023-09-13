@@ -2,12 +2,20 @@
 
 namespace App\Livewire;
 
+use Illuminate\Contracts\View\View;
 use Livewire\Component;
 
 class Sorteio extends Component
 {
-    public function render()
+    public $winner = null;
+
+    public function render() : View
     {
         return view('livewire.sorteio');
+    }
+
+    public function run()
+    {
+        $this->winner = 'Silvio';
     }
 }
