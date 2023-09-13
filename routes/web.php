@@ -19,12 +19,8 @@ use App\Livewire\Counter;
 
 Route::get('/', function () {
     Auth::loginUsingId(1);
-    Counter::class;
-    
     return view('welcome');
 });
-
-Route::get('/counter', Counter::class);
 
 
 Route::get('/dashboard', function () {
