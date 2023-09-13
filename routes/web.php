@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Livewire\Counter;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +19,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     Auth::loginUsingId(1);
+    Counter::class;
     
     return view('welcome');
 });
+
+Route::get('/counter', Counter::class);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
