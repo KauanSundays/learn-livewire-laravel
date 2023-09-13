@@ -14,7 +14,7 @@ class Sorteio extends Component
         return view('livewire.sorteio');
     }
 
-    public function run()
+    public function run() //Ação que faz winner trocar para o nome
     {
         $this->winner = 'Silvio';
     }

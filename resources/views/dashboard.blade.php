@@ -11,6 +11,8 @@
                 
                 <livewire:sorteio/>
 
+                <!--<livewire:counter/>-->
+
             </div>
         </div>
     </div>
