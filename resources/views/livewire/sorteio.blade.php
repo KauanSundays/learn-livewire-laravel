@@ -1,9 +1,11 @@
 <div>
     <div>
 
-        <div>
+        <div style="color: #fff">
 
             {{ $winner }}
+
+            
 
         </div>
 
