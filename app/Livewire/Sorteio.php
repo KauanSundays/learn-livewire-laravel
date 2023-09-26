@@ -18,6 +18,7 @@ class Sorteio extends Component
     public function run() : void//Ação que faz winner trocar para o nome
     {
         $winner = Candidate::query()->inRandomOrder()->first(); //query pra sortear
+        
         $this->winner = $winner->name;
     }
 }
