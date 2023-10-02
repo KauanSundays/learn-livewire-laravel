@@ -1,1 +1,5 @@
 EP2 - Exercicio criando um novo usuario no banco de dados apartir de um botão e interação no livewire
+
+EP4 - Criamos um Requerimento para poder enviar formulario
+
+EP5 - Confirmação que foi enviado formulario! Apaga o que estava, alerta de success

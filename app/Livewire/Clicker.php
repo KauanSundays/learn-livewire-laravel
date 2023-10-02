@@ -5,16 +5,17 @@ namespace App\Livewire;
 use App\Models\User;
 use Livewire\Component;
 use Livewire\Attributes\Rule; 
+use App\Livewire\request;
 
 class Clicker extends Component
 {
-    #[Rule('required|min:2|max:50')]
+    #[Rule('required|min:2|max:50')] //Necessidades para poder enviar
     public $name;
 
-    #[Rule('required|email|unique:users')]
+    #[Rule('required|email|unique:users')] //Necessidades para poder enviar
     public $email;
 
-    #[Rule('required|min:2')]
+    #[Rule('required|min:2')] //Necessidades para poder enviar
     public $password;
     
     
@@ -33,6 +34,9 @@ class Clicker extends Component
         ]);
 
     
+        $this->reset('name','email','password');
+
+        request->session()->flash('success', 'Usuario criado!!');
 
     }
     

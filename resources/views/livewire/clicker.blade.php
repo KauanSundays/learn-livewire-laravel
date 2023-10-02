@@ -1,4 +1,8 @@
 <div>
+    @if (session('success'))
+        <span class="w-100 py-3 bg-green-300"></span>
+    @endif
+
     <form class="p-5" wire:submit="createNewUser" action=>
         <input wire:model="name" class="block rounded border border-gray-100" type="text" placeholder="name">
         @error('name')
