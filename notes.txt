@@ -8,3 +8,8 @@ Exercicio TODOLIST -
 1)Com o template de formulario ja pronto, criamos o model Todo
 2)Adicionamos o componente livewire e sua blade (TodoList)
 3)No Livewire->todolist criamos a função publica create, a qual lidará com o botão
+4)Com o botão definido, precisamos detalhar o que vamos fazer->
+-validar (ver se esta de acordo, para isso valos usar um Rule )
+-criar na lista
+-limpar o input
+-enviar uma mensagem para o usuario confirmando
