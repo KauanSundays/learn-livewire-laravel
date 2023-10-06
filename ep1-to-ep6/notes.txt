@@ -3,3 +3,6 @@ EP2 - Exercicio criando um novo usuario no banco de dados apartir de um botão e
 EP4 - Criamos um Requerimento para poder enviar formulario
 
 EP5 - Confirmação que foi enviado formulario! Apaga o que estava, alerta de success
+
+Exercicio TODOLIST - 
+    1)Com o template de formulario ja pronto, criamos o model Todo
