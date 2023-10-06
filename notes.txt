@@ -5,4 +5,6 @@ EP4 - Criamos um Requerimento para poder enviar formulario
 EP5 - Confirmação que foi enviado formulario! Apaga o que estava, alerta de success
 
 Exercicio TODOLIST - 
-    1)Com o template de formulario ja pronto, criamos o model Todo
+1)Com o template de formulario ja pronto, criamos o model Todo
+2)Adicionamos o componente livewire e sua blade (TodoList)
+3)No Livewire->todolist criamos a função publica create, a qual lidará com o botão
