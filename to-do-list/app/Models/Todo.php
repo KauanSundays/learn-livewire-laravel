@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Todo extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['name']; // Adicione todas as colunas que deseja permitir preenchimento em massa aqui
+
 }

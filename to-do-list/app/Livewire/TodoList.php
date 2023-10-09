@@ -11,6 +11,7 @@ class TodoList extends Component
 {
     #[Rule('required|min:3|max:50')] //validar
     public $name;  //name
+    public $search;
 
     public function create()
     {
@@ -18,14 +19,16 @@ class TodoList extends Component
         $validated = $this->validateOnly('name');
 
         Todo::create($validated);
+
         $this->reset('name');
 
-        session()->flash('success', 'Created');
-
+        session()->flash('success', 'Created.');
         
     }
     public function render()
     {
-        return view('livewire.todo-list');
+        return view('livewire.todo-list', [
+            'todos' => Todo::latest()->get();
+        ]);
     }
 }
