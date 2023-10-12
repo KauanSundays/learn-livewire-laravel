@@ -19,7 +19,8 @@
         @endforeach
 
         <div class="my-2">
-            <!-- Pagination goes here -->
+            {{ $todos->links() }} 
+            {{-- pagina 1, pagina 2 --}}
         </div>
     </div>
 </div>

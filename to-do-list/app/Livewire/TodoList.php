@@ -5,10 +5,12 @@ namespace App\Livewire;
 use App\Models\Todo;
 use Livewire\Attributes\Rule;
 use Livewire\Component;
-
+use Livewire\WithPagination;
 
 class TodoList extends Component
 {
+    use WithPagination;
+    
     #[Rule('required|min:3|max:50')] //validar
     public $name;  //name
     public $search;
@@ -28,7 +30,8 @@ class TodoList extends Component
     public function render()
     {
         return view('livewire.todo-list', [
-            'todos' => Todo::latest()->get()
+            'todos' => Todo::latest()->paginate(5)
+            // Até 5 tasks por linha
         ]);
     }
 }
